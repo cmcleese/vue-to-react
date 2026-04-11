@@ -1,0 +1,29 @@
+body {
+  background-color: var(--color-main);
+  color: #f3f4f6;
+  margin: 0;
+}
+
+#app, #root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optional soft scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

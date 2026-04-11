@@ -18,26 +18,31 @@ Side-by-side code comparisons, interactive playgrounds, concept mapping.
 ## Folder Structure
 
 src/
-components/
-layout/ → AppShell, Sidebar, TopNav
-ui/ → buttons, badges, code panels (shadcn base)
-docs/ → lesson-specific components (CodeComparison, GotchaCard, etc)
-content/
-comparisons/ → MDX files for side-by-side lessons
-concepts/ → MDX for standalone concept explanations
-guides/ → MDX for migration guides
-pages/ → route-level components
-hooks/ → custom React hooks
-data/ → nav config, lesson metadata
-lib/ → utils, shiki setup
+  assets/     → Images, svgs, and static assets
+  components/
+    layout/   → MainLayout, Sidebar, TopNav
+    ui/       → Atomic components (shadcn/ui base)
+    docs/     → Lesson-specific components (CodeComparison, GotchaCard, etc)
+  content/
+    comparisons/ → MDX files for side-by-side lessons
+    concepts/    → MDX for standalone concept explanations
+    guides/      → MDX for migration guides
+  pages/      → Route-level components (e.g., LessonPage.tsx)
+  providers/  → Global Context Providers (Theme, App Providers)
+  hooks/      → Custom React hooks
+  data/       → Nav config, lesson metadata
+  lib/        → Utils, shiki setup
+  styles/     → Global styles
+  types/      → TypeScript definitions
 
 ## Styling
 
 - Dark theme first
-- Tailwind utility classes, no inline styles
+- Tailwind CSS v4 utility classes
 - CSS variables for theme tokens (defined in index.css)
-- Vue accent color: #42b883 (Vue green)
-- React accent color: #61dafb (React cyan)
+- Primary Accent (React): #5cd5f6
+- Secondary Accent (Vue): #50df9c
+- Tertiary Accent: #A855F7
 
 ## Code Style
 
